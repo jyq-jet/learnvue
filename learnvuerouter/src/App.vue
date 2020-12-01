@@ -6,6 +6,7 @@
 <!--    <button @click="homeClick">首页</button>-->
 <!--    <button @click="aboutClick">关于</button>-->
     <router-link :to="'/user/' + userId">用户</router-link>
+    <router-link :to="{path: '/profile', query:{name: 'why', age: 18, height: 1.88}}">档案</router-link>
   </div>
 </template>
 

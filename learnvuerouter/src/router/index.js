@@ -5,6 +5,8 @@ import Home from "../components/Home";
 import About from "../components/About";
 import User from "../components/User";
 
+const Profile = () => import("../components/Profile")
+
 Vue.use(Router)
 const routes = [
   {
@@ -22,6 +24,10 @@ const routes = [
   {
     path: '/user/:userId',
     component: User
+  },
+  {
+    path: '/profile',
+    component: Profile
   }
 ]
 
